@@ -1,0 +1,30 @@
+{
+  "name": "foodbase-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "echo \"Deploying commands\" && node deploy-commands.js",
+    "start": "echo \"Running Foodbot\" && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louis-manabat/foodbase-bot.git"
+  },
+  "author": "louis-manabat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louis-manabat/foodbase-bot/issues"
+  },
+  "homepage": "https://github.com/louis-manabat/foodbase-bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.2",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
+  }
+}
