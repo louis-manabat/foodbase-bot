@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Discord bot vars
+config.json
+
+# Prisma directory
+prisma
