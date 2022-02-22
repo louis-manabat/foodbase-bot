@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  foodbotdb:
+    image: 'postgres:${PG_TAG}'
+    container_name: foodbotdb
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DB}
+    ports:
+      - "${PG_PORT}:5432"
+    restart: always
