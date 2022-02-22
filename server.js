@@ -1,5 +1,4 @@
-// Importing this allows you to access the environment variables of the running node process
-require("dotenv").config();
+const { token } = require('./config.json');
 
 // Require the necessary discord.js classes
 const fs = require('fs');
@@ -40,4 +39,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Login to Discord with your client's token
-client.login(process.env.CLIENT_TOKEN);
+client.login(token);
