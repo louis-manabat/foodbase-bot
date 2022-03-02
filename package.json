@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "lint": "echo \"Linting code\" && eslint . --ext .js --ignore-pattern node_modules/",
     "deploy": "echo \"Deploying commands\" && node deploy-commands.js",
     "start": "echo \"Running Foodbot\" && node server.js"
   },
